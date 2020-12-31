@@ -1,0 +1,96 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+/* ouo is a random element im using so then I can put a lot of space instead of using <br> */
+/* I've realized that this hasn't done anything */
+
+ouo { 
+  line-height: 50px; 
+}
+
+h1 {
+  font-style: italic;
+  color: #94ff96;
+}
+
+table, th, td {
+  border: 10px solid #ffd485;
+}
+
+.preload {
+  width: 100%;
+  height: 100%; 
+  background: #ffd485; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 1; 
+}
+
+.logo { 
+  weight: 300px; 
+  height: 70px; 
+  margin: 150px auto 50px auto; 
+  font-size: 5opx; 
+  text-shadow: -1px 2px 2px #000; 
+  text-align: center; 
+  color: azure; 
+}
+
+.loader-frame { 
+  width: 70px; 
+  height: 70px; 
+  margin: auto; 
+  position: relative; 
+}
+
+.loader1, .loader2 { 
+  position: absolute; 
+  border: 5px solid transparent;
+  border-radius: 50%; 
+}
+
+.loader1 {
+  width: 70px; 
+  height: 70px; 
+  border-top: 5px solid orange; 
+  border-bottom: 5px solid #daa6ff;
+  animation: clockwisespin 2s linear 3;
+}
+
+.loader2 { 
+  width: 60px; 
+  height: 60px; 
+  border-left: 5px solid white; 
+  border-right: 5px solid darkturquoise; 
+  top: 5px; left: 5px; 
+  animation: anticlockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes anticlockwisespin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+
+@keyframes fadeout { 
+  from {opacity: 1}
+  to {opacity: 0;} 
+  
+}
+
+.lenny { 
+  weight: 300px; 
+  height: 70px; 
+  margin: 150px auto 50px auto; 
+  font-size: 5opx; 
+  text-shadow: -1px 2px 2px #000; 
+  text-align: center; 
+  color: white;
+}
